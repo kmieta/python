@@ -1,11 +1,11 @@
-##
+## Zadanie 3.1
     x = 2; y = 3;
     if (x > y):
         result = x;
     else:
         result = y;
 
-Program się skompiluje, aczkolwiek w pythonie nie używa się średników na końcu linii. Nawiasy w operacji warunkowej również są opcjonalne. Instrukcję warunkową można uprościć pisząc wyrażenie trójargumentowe result = x if x > y else y 
+Program się skompiluje, aczkolwiek w pythonie nie używa się średników na końcu linii. Nawiasy w operacji warunkowej również są opcjonalne. Instrukcję warunkową można uprościć pisząc wyrażenie trójargumentowe **result = x if x > y else y**
 
 ## 
     for i in "axby": if ord(i) < 100: print (i)
