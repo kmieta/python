@@ -21,12 +21,12 @@ Program się skompiluje, w przeciwieństwie do poprzedniego przykładu python po
 
     L = [3, 5, 4] ; L = L.sort()
 W drugiej linijce L.sort() zwraca None oraz przypisuje je do zmiennej L. poprawnie byłoby: 
-## 
+
     L = [3, 5, 4] ; L.sort()
 ##
     x, y = 1, 2, 3
 
-Jedna zmienna przypisuje jedną wartość, tutaj wartości jest więcej niż zmiennych. Poprawne wyznaczenie tupli natomiast wyglądałoby następująco: **x, *y = 1 , 2 , 3**
+Jedna zmienna przypisuje jedną wartość, tutaj wartości jest więcej niż zmiennych. Poprawne wyznaczenie tupli natomiast wyglądałoby następująco: __x, *y = 1 , 2 , 3__
 ##
     X = 1, 2, 3 ; X[1] = 4
 Tuple są niemodyfikowalne (immutable) nie można zatem przypisać na nowo jej wartości.
