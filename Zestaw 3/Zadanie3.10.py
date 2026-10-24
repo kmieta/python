@@ -14,4 +14,4 @@ romanNumbers = {
         1 : "I"
 }
 
-# można także zainicjalizować pustą listę i dodaać elementy do niej lub skonwertować tuple/listę do słownika 
+# można także zainicjalizować pusty słownik i dodaać elementy do niej lub skonwertować tuple/listę do słownika 
