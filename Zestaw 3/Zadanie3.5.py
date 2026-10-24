@@ -1,8 +1,8 @@
-x = 100
+x = 52
 ruler = ''
 for i in range(x):
     ruler +="|...."
-ruler += "| \n"
+ruler += "|"
 
 rulerNumbers = ''
 for i in range(x + 1):
