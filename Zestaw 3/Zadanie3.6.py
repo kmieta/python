@@ -16,3 +16,12 @@ for i in range(y):
 finalstr += rows
 
 print(finalstr)    
+
+expected306 = '''+---+---+---+---+
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
++---+---+---+---+
+'''
+
+assert finalstr == expected306

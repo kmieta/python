@@ -5,3 +5,6 @@ for i in A:
     B.append(sum(i))
 
 print(B)
+
+expected309 = [0, 4, 3, 7, 18]
+assert B == expected309
