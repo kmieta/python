@@ -5,4 +5,3 @@ def fibonacci(n):
         x = y
         y = z
     return x 
-print(fibonacci(4))
