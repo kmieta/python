@@ -4,10 +4,7 @@ def sum_seq(sequence):
     for i in sequence:
         if isinstance(i, (list, tuple)):
             suma += sum_seq(i)
-            
         else: suma += i
     return suma
 
-
-    
 print(sum_seq(sequence))
