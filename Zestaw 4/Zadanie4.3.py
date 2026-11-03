@@ -4,3 +4,5 @@ def factorialIterative(n):
         res *= i
     return res
 
+expectedFactorial = 362880
+assert factorialIterative(9) == expectedFactorial

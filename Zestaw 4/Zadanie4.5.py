@@ -5,7 +5,8 @@ def odwracanieIteracyjnie(L, left, right):
         right -= 1
     return L
 
-print(odwracanieIteracyjnie([1,2,3,4,5,6,7,8,9,10],0,9))
+expectedReversal = [10,9,8,7,6,5,4,3,2,1]
+assert odwracanieIteracyjnie([1,2,3,4,5,6,7,8,9,10],0,9)
 
 def odwracanieRekurencyjnie(L, left, right):
     if left < right:
@@ -13,6 +14,7 @@ def odwracanieRekurencyjnie(L, left, right):
         odwracanieRekurencyjnie(L , left + 1, right - 1)
     return L
 
-print(odwracanieRekurencyjnie([1,2,3,4,5,6,7,8,9,10],0,9))
+expectedReversal = [10,9,8,7,6,5,4,3,2,1]
+assert odwracanieRekurencyjnie([1,2,3,4,5,6,7,8,9,10],0,9)
 
 

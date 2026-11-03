@@ -7,4 +7,5 @@ def sum_seq(sequence):
         else: suma += i
     return suma
 
-print(sum_seq(sequence))
+expectedSum = 45
+assert sum_seq(sequence) == expectedSum

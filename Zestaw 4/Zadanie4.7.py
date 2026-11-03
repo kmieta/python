@@ -7,4 +7,5 @@ def flatten(sequence):
         else: suma.append(i)
     return suma
 
-print(flatten(sequence))
+expectedSequence = [1,2,3,4,5,6,7,8,9]
+assert flatten(sequence) == expectedSequence

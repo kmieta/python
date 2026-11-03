@@ -5,3 +5,6 @@ def fibonacci(n):
         x = y
         y = z
     return x 
+
+expectedFibonacci = 34
+assert(fibonacci(9)) == expectedFibonacci
