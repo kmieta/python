@@ -7,4 +7,4 @@ def fibonacci(n):
     return x 
 
 expectedFibonacci = 34
-assert(fibonacci(9)) == expectedFibonacci
+assert fibonacci(9) == expectedFibonacci
