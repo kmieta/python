@@ -31,10 +31,10 @@ def is_positive(frac):  # bool, czy dodatni
         else:
             return True 
         
-def is_zero(frac):
+def is_zero(frac):          # bool, typu [0, x]
     if frac[1] == 0:
         raise ZeroDivisionError
-    return frac[0] == 0                     # bool, typu [0, x]
+    return frac[0] == 0                     
 
 def cmp_frac(frac1, frac2):         # -1 | 0 | +1
     fr2fl1 = frac2float(frac1)
