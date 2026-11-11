@@ -103,6 +103,7 @@ class TestFractions(unittest.TestCase):
         self.assertEqual(cmp_frac([1,2], [1,3]), -1)
         self.assertEqual(cmp_frac([1,3], [1,2]), 1)
         self.assertEqual(cmp_frac([1,3], [3,9]), 0)
+        self.assertEqual(cmp_frac([2,5], [1,3]), -1)
 
     def test_frac2float(self): 
         self.assertRaises(ZeroDivisionError, frac2float, self.banned)
