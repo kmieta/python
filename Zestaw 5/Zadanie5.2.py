@@ -55,13 +55,6 @@ def frac2float(frac): # konwersja do float
         raise ZeroDivisionError
     return frac[0] / frac[1]
 
-# f1 = [-1, 2]      # -1/2
-# f2 = [1, -2]      # -1/2 (niejednoznaczność)
-# f3 = [0, 1]       # zero
-# f4 = [0, 2]       # zero (niejednoznaczność)
-# f5 = [3, 1]       # 3
-# f6 = [6, 2]       # 3 (niejednoznaczność)
-
 import unittest
 
 class TestFractions(unittest.TestCase):
@@ -99,20 +92,17 @@ class TestFractions(unittest.TestCase):
         self.assertTrue(is_positive([-1,-2]))
         self.assertFalse(is_positive([-1,2]))
         
-
     def test_is_zero(self):
         self.assertRaises(ZeroDivisionError, is_zero, self.banned)
         self.assertTrue(is_zero(self.zero))
         self.assertFalse(is_zero([1,2]))
         self.assertTrue(is_zero([0,5]))
 
-
     def test_cmp_frac(self): 
         self.assertRaises(ZeroDivisionError, cmp_frac, self.banned, [1,3])
         self.assertEqual(cmp_frac([1,2], [1,3]), -1)
         self.assertEqual(cmp_frac([1,3], [1,2]), 1)
         self.assertEqual(cmp_frac([1,3], [3,9]), 0)
-
 
     def test_frac2float(self): 
         self.assertRaises(ZeroDivisionError, frac2float, self.banned)
@@ -121,15 +111,7 @@ class TestFractions(unittest.TestCase):
         self.assertEqual(frac2float([1,3]), float(1/3))
         self.assertEqual(frac2float([2,7]), float(2/7))
 
-
     def tearDown(self): pass
 
 if __name__ == '__main__':
     unittest.main()     # uruchamia wszystkie testy
-
-    print(add_frac([1,5],[4,7]))
-    print(sub_frac([1,5],[4,7]))
-    print(mul_frac([1,2],[1,3]))
-    print(div_frac([3,5],[4,9]))
-    print(is_positive([-1,-7]))
-    print(cmp_frac([6,5],[6,10]))
