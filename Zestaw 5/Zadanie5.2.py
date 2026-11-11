@@ -23,7 +23,8 @@ def mul_frac(frac1, frac2):        # frac1 * frac2
 
 def div_frac(frac1, frac2):         # frac1 / frac2
     commonfrac = commonDenominator(frac1, frac2)
-    return [ commonfrac[0] / commonfrac[1] , commonfrac[2] ]
+
+    return [ commonfrac[0] , commonfrac[1]]
 
 def is_positive(frac):  # bool, czy dodatni
         if (frac[0] < 0 and frac[1] >= 0 ) or (frac[0] >= 0 and frac[1] < 0):
@@ -90,5 +91,6 @@ if __name__ == '__main__':
 
     print(add_frac([1,5],[4,7]))
     print(sub_frac([1,5],[4,7]))
+    print(div_frac([3,5],[4,9]))
     print(is_positive([-1,-7]))
     print(cmp_frac([6,5],[6,10]))
